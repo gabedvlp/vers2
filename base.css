@@ -1,5 +1,9 @@
+/* Estilos da barra lateral */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px; font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+        font-size: 18px;
+    }
 }
 
 .sidenav {
@@ -15,7 +19,8 @@
     transition: 0.5s;
 }
 
-.sidenav a, .sidenav button {
+.sidenav a,
+.sidenav button {
     text-decoration: none;
     color: black;
 }
@@ -45,13 +50,16 @@
     color: #ffc5c1;
 }
 
-body, html {
+/* Estilos do cabeçalho e navegação */
+body,
+html {
     background-color: #2a1e1e; 
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-header {
+header,
+nav {
     background-color: #ffc5c1;
     margin: 0;
     width: 100%;
@@ -98,21 +106,22 @@ nav img {
     height: 35px;
     cursor: pointer;
 }
+
 nav div.home {
     border-right: 2px solid black;
     padding-right: 10px;
-
 }
+
 nav div.img {
     padding-left: 10px;
     border-left: 2px solid black;
-
 }
-nav div.img, .home {
+
+nav div.img,
+.home {
     margin: 0;
     display: flex;
     align-items: center;
-
 }
 
 nav div.btn {
@@ -136,53 +145,64 @@ nav div.btn a {
     text-decoration: none;
     color: #2a1e1e ;
 }
+
+/* Estilos do conteúdo esquerdo */
 .esq {
-    background-color: #f99fa9 ;
+    background-color: #f99fa9;
     margin: 0;
     padding: 5px; 
-    h2 {
-        font-size: 30px;
-        margin: 3px;
-    } 
-    p {
-        font-size: 15px;  
-        margin: 3px;  
-        text-indent: 1em;
-        margin-bottom: 5px;
-    } 
-       
-    blockquote {
-        text-align: left;
-        padding: 3px 5px 3px 20px;
-        margin: 10px 15px 10px 15px;
-        border:1px solid #503850;
-        border-left: 5px solid #503850;
-        border-radius: 5%;
-        background-color: #5038508c;
-    }
-}  
+}
+
+.esq h2 {
+    font-size: 30px;
+    margin: 3px;
+} 
+
+.esq p {
+    font-size: 15px;  
+    margin: 3px;  
+    text-indent: 1em;
+    margin-bottom: 5px;
+} 
+
+.esq blockquote {
+    text-align: left;
+    padding: 3px 5px 3px 20px;
+    margin: 10px 15px 10px 15px;
+    border:1px solid #503850;
+    border-left: 5px solid #503850;
+    border-radius: 5%;
+    background-color: #5038508c;
+}
+
+/* Estilos do conteúdo direito */
 .dir {
     background-color: #f99fa9;
     margin: 0;
     padding: 5px;
-        h1 {
-            text-align: center;
-            margin: 2px; 
-            border: 1px solid;
-        }
-        pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            margin: 0;
-            font-size: 15px;
-        }
-    }
+    padding-bottom: 7vh;
+
+}
+
+.dir h1 {
+    text-align: center;
+    margin: 2px; 
+    border: 1px solid;
+}
+
+.dir pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    font-size: 15px;
+}
 
 div.video {
     text-align: center;
     margin: 3px;
 }
 
+/* Estilos do conteúdo principal */
 .main {
     background-color: #f99fa9;
     margin: 0;
@@ -191,7 +211,8 @@ div.video {
     text-indent: 1em;
 }
 
-.main p, .main h2 {
+.main p,
+.main h2 {
     margin: 0;
     margin-bottom: 5px;
 }
@@ -216,11 +237,13 @@ div.video {
     color: #ffc5c1;
 }
 
+/* Estilos adicionais */
 mark {
     background-color: deeppink;
 }
 
-.tab, .list {
+.tab,
+.list {
     margin: 01px;
     padding: 5px;
     border: 1px solid;
@@ -234,10 +257,44 @@ mark {
     margin: 0;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid;
 }
 
-tr, td {
+tr,
+td {
     width: 50%;
+}
+footer {
+    background-color: #503850c4; 
+    text-align: center;
+    padding:0;
+    display: flex;
+    border-top: 2px solid;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+footer img {
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    display: flex;
+    border: 2px solid;
+
+}
+footer a {
+    color: #2a1e1e;
+    letter-spacing: 3px;
+    display: flex;
+    text-decoration: none;
+}
+footer p {
+    padding-left: 10px;
 }
