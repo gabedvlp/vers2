@@ -1,3 +1,54 @@
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+  }
+/* The side navigation menu */
+.sidenav {
+    margin: 0;
+    height: 300% ; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    left: 0;
+    background-color: #2a1e1ea9; /* Black*/
+    overflow-x:hidden ; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+  /* The navigation menu links */
+  .sidenav button {
+    border: 0;
+    width: 95%;
+    margin: 5px 5px 5px 5px ;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #503850;
+    color: #ffc5c1;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav button:hover {
+    background-color: #5038509f ;
+    border: 1px solid;
+    
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #ffc5c1;
+
+  }
+
 body, html {
     background-color: #2a1e1e ; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -82,7 +133,7 @@ nav div.btn {
     margin: 0;
     padding: 5px; 
     padding-bottom: 50px;
-
+    text-indent: 1em;
     h1 {
         margin: 0;
         margin-bottom: 5px;
@@ -98,12 +149,7 @@ nav div.btn {
         font-size: 15px;
         border: 2px solid #503850;
         padding: 5px;    
-        color: #ffc5c1;
-
-    p {
-        margin: 5px;
-        text-indent: 1em;
-    } 
+        color: #ffc5c1; 
     }
 }      
 mark {

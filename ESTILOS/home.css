@@ -71,49 +71,4 @@ nav div.btn {
         color: black;
        }
 }
-.esq {
-    background-color: #f99fa9 ;
-    margin: 0;
-    padding: 5px; 
-    h2 {
-        font-size: 30px;
-        margin: 3px;
-    } 
-    p {
-        font-size: 15px;  
-        margin: 3px;  
-        text-indent: 1em;
-        margin-bottom: 5px;
-    } 
-       
-    blockquote {
-        text-align: left;
-        padding: 3px 5px 3px 20px;
-        margin: 10px 15px 10px 15px;
-        border:1px solid #503850;
-        border-left: 5px solid #503850;
-        border-radius: 5%;
-        background-color: #5038508c;
-    }
-}  
-.dir {
-    background-color: #f99fa9;
-    margin: 0;
-    padding: 5px;
-        h1 {
-            text-align: center;
-            margin: 0; 
-            border: 1px solid
-        }
-        pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            margin: 0;
-            font-size: 15px;
-        }
-    }
 
-div.video {
-    text-align: center;
-    margin: 3px;
-}

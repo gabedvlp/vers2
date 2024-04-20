@@ -3,76 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ESTILOS/home.css">
+    <link rel="stylesheet" href="ESTILOS\base.css">
     <title>Document</title>
     <style>
-* {
-  box-sizing: border-box;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-[class*="col-"] {
-  float: left;
-}
-.row{
-    display: flex;
-    flex-direction: column;
-}
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-} 
-
-@media only screen and (min-width: 768px) {
-.row{
-display: flex;
-flex-direction: row;
-}
-  /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-}
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
-}
-    </style>
-</head>
+        * {
+          box-sizing: border-box;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        @media only screen and (min-width: 767px) {
+              .row{
+                display: flex;
+                flex-direction: row;
+              }
+        }
+        /* For mobile phones: */
+        @media only screen and (max-width: 768px) {
+              .row{
+                display: flex;
+                flex-direction: column;
+              }
+              [class*="col-"] {
+                  width: 100%;
+              } 
+        }
+        
+        @media only screen and (min-width: 600px) {
+          /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        }
+            </style>
+        </head>
 <body>
         <header>
             <h1>EVERYTHING MATTERS!</h1>
-            <img src="MIDIA/gabriel.png">
+            <img src="/MIDIA/gabriel.png">
             <h2>GABRIEL SILVA</h2>
             <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
                 UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
@@ -80,7 +66,7 @@ flex-direction: row;
 
         <nav>
         <div class="img">
-            <img src="MIDIA/menu.svg">
+            <img src="/MIDIA/menu.svg">
         </div>
         <div class="btn">
             <button><a href="html.html">HTML</a></button>
@@ -112,7 +98,7 @@ flex-direction: row;
                         Linguagem de estilo, usada para estilizar a estrutura desenvolvida no código HTML.
                         <h1>JAVASCRIPT</h1>
                         <div class="video">
-                        <video src="MIDIA/isabela boscov_ meu deus, isso deve ser dívida de jogo….mp4" controls width="80%"></video>
+                        <video src="/MIDIA/isabela boscov_ meu deus, isso deve ser dívida de jogo….mp4" controls width="80%"></video>
                         </div>
                     </div>
             </div>
