@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ESTILOS/css.css">
+    <title>Document</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+} 
+
+@media only screen and (min-width: 768px) {
+.row{
+display: flex;
+flex-direction: row;
+}
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+    </style>
+</head>
+<body>
+        <header>
+            <h1>EVERYTHING MATTERS!</h1>
+            <img src="/MIDIA/gabriel.png">
+            <h2><a href="home.html">GABRIEL SILVA</a></h2>
+            <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+                UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
+        </header>
+
+        <nav>
+          <div class="img">
+              <img src="/MIDIA/menu.svg">
+          </div>
+          <div class="btn">
+              <button><a href="html.html">HTML</a></button>
+              <button><a href="css.html">CSS</a></button>
+              <button><a href="javascript.html">JAVASCRIPT</a></button>
+          </div>
+          </nav>
+
+        <div class="main">
+            <div>
+                <h1>O que é CSS?</h1>
+<p>É a linguagem que usamos para estilizar uma página da Web.</p>
+<pre class="pre">
+    1. Significa "FOLHAS DE ESTILO EM CASCATA";
+    2. Descreve como os elementos HTML devem ser exibidos;
+    3. Pode controlar o layout de várias páginas de uma vez;
+    4. CSS externos são armazenados em arquivos .CSS
+</pre>
+<p>O HTML NUNCA foi planejado para conter tags para formatar uma página da web! Quando tags como &lt;font&gt; e atributos de cor foram adicionados à especificação HTML 3.2, isso iniciou um pesadelo para os desenvolvedores web. O desenvolvimento de grandes sites, onde fontes e informações de cores eram adicionadas a cada página, tornou-se um processo longo e caro. </p>
+<p>Para resolver este problema, o World Wide Web Consortium (W3C) criou o CSS e removeu a formatação de estilo da página HTML.</p>
+                <h1>SINTAXE CSS</h1>
+<p>Uma regra CSS consiste em um seletor e um bloco de declaração. Exemplo de um CSS:
+  <pre class="pre">
+    p {
+      color: red;
+      text-align: center;
+    }</pre>
+<br>
+1. <mark>p:</mark> é um seletor em CSS (aponta para o elemento HTML que você deseja estilizar: &lt;p&gt;);<br>
+2. <mark>color:</mark> é uma propriedade e <mark>red</mark> é o valor da propriedade;<br>
+3. <mark>text-align:</mark> é uma propriedade e <mark>center</mark> é o valor da propriedade.<br>
+</p>
+                <h1>SELETORES</h1>
+<p>
+  Os seletores CSS são usados ​​para “encontrar” (ou selecionar) os elementos HTML que você deseja estilizar. Podemos dividir os seletores CSS em cinco categorias:<br>
+1. <mark>SELETORES SIMPLES:</mark> Selecionam elementos com base no nome, id ou classe.<br>
+2. <mark>SELETORES COMBINADORES:</mark> Selecionam elementos com base em um relacionamento específico entre eles.<br>
+3. <mark>SELETORES DE PSEUDOCLASSE:</mark> Selecionam elementos com base em um determinado estado.<br>
+4. <mark>SELETORES DE PSEUDOELEMENTOS:</mark> Selecionam uma parte de um elemento.<br>
+5. <mark>SELETORES DE ATRIBUTOS:</mark> Selecionam elementos com base em um ATRIBUTO ou VALOR.
+</p>
+                <h1>SELETOR DE ID</h1>
+<p>
+  Usa o atributo id para selecionar um elemento específico. O id de um elemento é ÚNICO em uma página, e o id deve ser exclusivo para cada elemento. Para selecionar um elemento com id, escreva um caractere hash (#), seguido do id do elemento. Exemplo:
+  <pre class="pre">
+    #header {
+      color: red;
+      text-align: center;
+    }
+</pre><br>
+<mark>NOTA: UM NOME DE IDENTIFICAÇÃO NÃO PODE COMEÇAR COM UM NÚMERO.</mark> 
+</p>
+                <h1>SELETOR DE CLASSE</h1>
+<p>
+  Usa o atributo class para selecionar um elemento com base em uma lista de classes. Para selecionar um elemento com classe, escreva o caractere de ponto (.) seguido do nome da classe. Exemplo:</p>
+  <pre class="pre">
+    .center {
+      text-align: center;
+      color: red;
+    }
+</pre>
+<p>Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe. Exemplo:</p>
+<pre class="pre">
+  p.center {
+      text-align: center;
+      color: red;
+    }
+</pre>
+<p>Neste exemplo, apenas os elementos &lt;p&gt; com class="center" serão afetados.</p>
+<p>Os elementos HTML também podem referir-se a mais de uma classe. Exemplo:</p>
+<pre class="pre">
+  &lt;p class="center large"&gt;DUAS CLASSES.&lt;/p&gt;
+</pre>
+<p>Neste exemplo, os elementos &lt;p&gt; com class="center" e class="large" serão afetados.</p>
+<mark>NOTA: UM NOME DE CLASSE NÃO PODE COMEÇAR COM UM NÚMERO.</mark>
+</p>
+                <h1>SELETOR UNIVERSAL</h1>
+<p>
+ O seletor universal (*) seleciona todos os elementos HTML. Exemplo:
+ <pre class="pre">
+  * {
+      color: red;
+      text-align: center;
+    }
+</pre>
+A regra afetará todos os elementos HTML da página.
+  </p>
+            </div>
+        </div>
+</body>
+</html>

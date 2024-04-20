@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ESTILOS/html.css">
+    <title>Document</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+} 
+
+@media only screen and (min-width: 768px) {
+.row{
+display: flex;
+flex-direction: row;
+}
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+}
+    </style>
+</head>
+<body>
+        <header>
+            <h1>EVERYTHING MATTERS!</h1>
+            <img src="/MIDIA/gabriel.png">
+            <h2><a href="home.html">GABRIEL SILVA</a></h2>
+            <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+                UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
+        </header>
+
+        <nav>
+          <div class="img">
+            <img src="/MIDIA/menu.svg">
+          </div>
+          <div class="btn">
+              <button><a href="html.html">HTML</a></button>
+              <button><a href="css.html">CSS</a></button>
+              <button><a href="javascript.html">JAVASCRIPT</a></button>
+          </div>
+          </nav>
+
+        <div class="main">
+            <div>
+              <h1>ANATOMIA DE UM HTML:</h1>
+<pre class="pre">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  
+&lt;head&gt; 
+  &lt;title&gt;TÍTULO&lt;/title&gt; 
+&lt;/head&gt;
+  
+&lt;body&gt; 
+  &lt;h1&gt;CABEÇALHO&lt;/h1&gt;
+  &lt;p&gt;PARÁGRAFO&lt;/p&gt; 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>Um elemento HTML é definido por uma TAG INICIAL, algum CONTEÚDO e uma TAG FINAL. O elemento HTML é tudo, desde a tag inicial até a tag final.</p>
+<p><mark>NOTA: ALGUNS ELEMENTOS NÃO POSSUEM CONTEÚDO, COMO O ELEMENTO &lt;br&gt;. SÃO CHAMADOS ELEMENTOS VAZIOS E NÃO POSSUEM TAG FINAL.</mark></p>
+              <h1>LINKS HTML:</h1>
+<p>São definidos com a tag &lt;a&gt;:</p>
+<pre class="pre">
+&lt;a href="https://www.w3schools.com"&gt;link&lt;/a&gt;
+</pre>
+<p>Destino do link: HREF (usado para links e direcionamento).</p>
+              <h1>IMAGENS HTML:</h1>
+<p>São definidas com a tag &lt;img&gt;:<p>
+<pre class="pre">
+&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
+</pre>
+<p>
+Arquivo de origem: SRC (usado para recursos incorporados)<br>
+Texto alternativo: ALT (usado para acessibilidade)<br>
+Tamanho: WIDTH (largura) e HEIGHT (altura)</p>
+              <h1>VISUALIZAR FONTE HTML:</h1>
+<p>VER CÓDIGO-FONTE HTML: </p>
+<pre class="pre">
+  >>> CTRL + U em uma página</pre>
+<p>INSPENCIONAR UM ELEMENTO HTML: </p>
+<pre class="pre">
+  >>> F12 em uma página 
+  >>> Botão direito sobre um elemento específico - inspecionar 
+</pre><br>
+              <h1>ATRIBUTOS HTML:</h1>
+<p>1. Todos os ELEMENTOS podem ter atributos;<br>
+2. Fornecem informações adicionais sobre os elementos;<br>
+3. São SEMPRE especificados na TAG INICIAL;<br>
+4. Geralmente vêm em pares nome/valor como: nome="valor";<br>
+5. Não diferencia MAÍUSCULAS de MINÚSCULAS: <br>
+  > Recomendação: letras minúsculas em HTML; <br>
+  > Exigência: letras minúsculas para tipos de documentos mais rígidos, como XHTML. <br>
+6. Sempre citar valores de atributos (aspas); <br>
+7. Aspas simples / aspas duplas: <br>
+  > ASPAS DUPLAS: são mais comuns, mas as SIMPLES também podem ser usadas; <br>
+  > ASPAS SIMPLES: quando o próprio valor do atributo contém aspas duplas. <br>
+    <mark>&lt;p title='John "ShotGun" Nelson'&gt;</mark> ou <br>
+    <mark>&lt;p title="John 'ShotGun' Nelson"&gt;</mark>
+</p>
+              <h1>TÍTULOS, PARÁGRAFOS E TEXTO PRÉ-FORMATADO:</h1>
+<pre class="pre">1. Títulos são definidos com as tags "h1" a "h6":
+  > H1: Título mais importante;
+  > H6: Título menos importante.
+  1.1. Os navegadores adicionam automáticamente uma margem antes e depois de um título;
+  1.2. Mecanismos de pesquisa usam os títulos para indexar a estrutura e o conteúdo;
+  1.3. Usuários folheam uma página pelos títulos;
+  1.4. USE APENAS PARA TÍTULOS.
+</pre>
+<br>
+<pre class="pre">2. Parágrafos são definidos com a tag "p":
+  > Sempre começa uma nova linha e geralmente é um bloco de texto.
+  2.1. Os navegadores adicionam automáticamente uma margem antes e depois;
+  2.2. Não se tem certeza de como será exibido:
+    > Telas grandes ou pequenas e janelas redimensionadas = resultados diferentes.
+  2.3. Não é possível alterar a exibição com espaços ou linhas:
+    > O navegador removerá automáticamente qualquer espaço ou linha adicional;
+    > A tag "hr" é usada para separar o conteúdo em uma página HTML. Define uma quebra temática e geralmente é exibida como uma regra horizontal.
+    > A tag "br" define uma quebra de linha sem iniciar um novo parágrafo.
+    > NOTA: AS TAGS HR E BR SÃO TAGS VAZIAS
+</pre>
+<br>
+<pre class="pre">3. Textos pré-formatados são definidos com a tag "pre":
+  > Preserva espaços e quebras de linha;
+  > É exibido em uma fonte de largura fixa (geralmente Courier).
+</pre>
+              <h1>FORMATAÇÃO E CITAÇÃO:</h1>
+<pre class="pre">
+1. Formatação de texto:
+&lt;b&gt; Define texto em negrito, sem qualquer importância extra.
+&lt;strong&gt; Define texto de grande importância. Normalmente é exibido em negrito.
+&lt;i&gt; Costuma ser usada para indicar um termo técnico, uma frase de outro idioma, um pensamento, o nome de um navio etc. Normalmente é exibida em itálico.
+&lt;em&gt; Texto enfatizado. Normalmente exibido em itálico. Um leitor de tela pronunciará as palavras usando ênfase verbal.
+&lt;mark&gt; Texto marcado ou destacado.
+&lt;small&gt; Texto menor.
+&lt;del&gt; Texto excluído de um documento. Os navegadores geralmente traçam uma linha.
+&lt;ins&gt; Texto inserido em um documento. Os navegadores geralmente sublinharão.
+&lt;sub&gt; Texto subscrito. Aparece meio caractere abaixo da linha normal e às vezes é renderizado em uma fonte menor.
+&lt;sup&gt; Texto sobrescrito. Aparece meio caractere acima da linha normal e às vezes é renderizado em uma fonte menor.
+</pre>
+<br>
+<pre class="pre">
+2. Citações:
+&lt;blockquote&gt; Define uma seção citada de outra fonte. Navegadores geralmente recuam.
+&lt;q&gt; Citações curtas. Normalmente inserem aspas ao redor.
+&lt;abbr&gt; Abreviações ou acronimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Podem fornecer informações úteis aos navegadores, sistemas de tradução e motores de busca.
+    NOTA: USE "TITLE" PARA MOSTRAR A DESCRIÇÃO AO PASSAR O MOUSE.
+    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+&lt;address&gt; Informações de contato do autor/proprietário de um documento ou artigo. Podem ser: e-mail, site, endereço físico, telefone, rede social etc. Normalmente aparece em itálico, sempre adiciona uma quebra de linha antes e depois.
+&lt;cite&gt; Título de um trabalho criativo. Livro, poema, filme, pintura, filme etc. O nome de uma pessoa não é título de uma obra. Geralmente aparece em itálico.
+&lt;bdo&gt; Substituição bidirecional. Usada para substituir a direção atual do texto. Normalmente exibido em itálico.
+</pre>
+            </div>
+        </div>
+</body>
+</html>
