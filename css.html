@@ -65,19 +65,26 @@
         </header>
 
         <nav>
-          <div class="img">
-              <img src="MIDIA/menu.svg">
+          <div class="home">
+            <a href="index.html"><img src="MIDIA/home-icon-silhouette.svg"></a>
           </div>
           <div class="btn">
-              <button><a href="html.html">HTML</a></button>
               <button><a href="css.html">CSS</a></button>
-              <button><a href="javascript.html">JAVASCRIPT</a></button>
+          </div>
+          <div class="img">
+            <img src="MIDIA/menu.svg" onclick="openNav()">
           </div>
           </nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button><a href="">css</a></button>
+            <button><a href="">css</a></button>
+            <button><a href="">css</a></button>
+          </div>
 
         <div class="main">
             <div>
-                <h1>O que é CSS?</h1>
+                <h1>CSS - INTRODUÇÃO</h1>
 <p>É a linguagem que usamos para estilizar uma página da Web.</p>
 <pre class="pre">
     1. Significa "FOLHAS DE ESTILO EM CASCATA";
@@ -156,5 +163,16 @@ A regra afetará todos os elementos HTML da página.
   </p>
             </div>
         </div>
+        <script>
+          /* Set the width of the side navigation to 250px */
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+                </script>
 </body>
 </html>

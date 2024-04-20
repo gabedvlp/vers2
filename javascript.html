@@ -65,16 +65,22 @@
         </header>
 
         <nav>
-          <div class="img">
-            <img src="MIDIA/menu.svg">
+          <div class="home">
+            <a href="index.html"><img src="MIDIA/home-icon-silhouette.svg"></a>
           </div>
           <div class="btn">
-              <button><a href="html.html">HTML</a></button>
-              <button><a href="css.html">CSS</a></button>
               <button><a href="javascript.html">JAVASCRIPT</a></button>
           </div>
+          <div class="img">
+            <img src="MIDIA/menu.svg" onclick="openNav()">
+          </div>
           </nav>
-          
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button><a href="">js</a></button>
+            <button><a href="">js</a></button>
+            <button><a href="">js</a></button>
+          </div>
 
         <div class="main">
             <div>
@@ -185,5 +191,16 @@ let z = x + y;
             Deve começar com uma letra (AZ ou az), cifrão ($) ou sublinhado (_)</p>
         </div>
     </div>
+    <script>
+      /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+            </script>
 </body>
 </html>
