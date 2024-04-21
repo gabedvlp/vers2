@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="mediaq.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>EVERYTHING MATTERS!</h1>
+        <img src="MIDIA/gabriel.png">
+        <h2>GABRIEL SILVA</h2>
+        <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
+    </header>
+
+    <nav>
+        <div class="home">
+            <a href="index.html"><img src="MIDIA/home-icon-silhouette.svg"></a>
+        </div>
+        <div class="btn">
+            <button><a href=""></a>OPERADORES JAVASCRIPT</button>
+        </div>
+        <div class="img">
+            <img src="MIDIA/menu.svg" onclick="openCloseNav()">
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <button><a href="variaveis.html">VARIÁVEIS</a></button>
+        <button><a href="operadores.html">OPERADORES</a></button>
+        <button><a href=""></a></button>
+    </div>
+    <div class="main">
+        <h1>TIPOS DE OPERADORES</h1>
+        <p>Existem diferentes tipos de operadores:</p>
+            <li>Aritméticos</li>
+                <table class="trc">
+                    <tr>
+                        <th>OPERADOR</th>
+                        <th>DESCRIÇÃO</th>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>Adição</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Subtração</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplicação</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>Exponenciação</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Divisão</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Módulo (resto da divisão)</td>
+                    </tr>
+                    <tr>
+                        <td>++</td>
+                        <td>Incremento</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>Decremento</td>
+                    </tr>
+                </table>
+            <li>De atribuição</li>
+                <table class="trc">
+                    <tr>
+                        <th>OPERADOR</th>
+                        <th>EXEMPLO</th>
+                        <th>IGUAL A </th>
+                    </tr>
+                    <tr>
+                        <td>=</td>
+                        <td>x = y</td>
+                        <td>x = y</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += y</td>
+                        <td>x = x + y</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= y</td>
+                        <td>x = x - y</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= y</td>
+                        <td>x = x * y</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= y</td>
+                        <td>x = x / y</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= y</td>
+                        <td>x = x % y</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= y</td>
+                        <td>x = x ** y</td>
+                    </tr>
+                </table>
+            <li>De comparação</li>
+                <table class="trc">
+                    <tr>
+                        <th>OPERADOR</th>
+                        <th>DESCRIÇÃO</th>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Igual a</td>
+                    </tr>
+                    <tr>
+                        <td>===</td>
+                        <td>Valor/tipo iguak</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Não igual</td>
+                    </tr>
+                    <tr>
+                        <td>!==</td>
+                        <td>Valor/tipo não igual</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Maior que</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Menor que</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;=</td>
+                        <td>Maior ou igual que</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>Menor ou igual que</td>
+                    </tr>
+                    <tr>
+                        <td>?</td>
+                        <td>Ternário</td>
+                    </tr>
+                </table>
+            <li>De string</li>
+            <ul>
+                <li style="list-style-type: circle;">Todos os operadores de comparação acima podem ser usados em strings.</li>
+                <li style="list-style-type: circle;">Adição = Concatenar</li>
+
+            </ul>
+            <li>Lógicos</li>
+            <table class="trc">
+                <tr>
+                    <th>OPERADOR</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>Lógico e</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Lógico ou</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Lógico não</td>
+                </tr>
+            </table>
+            <li>Bit a bit</li>
+            <table class="trc">
+                <tr>
+                    <th>OPERADOR</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>AND</td>
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>OR</td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>NOT</td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>XOR</td>
+                </tr>
+                <tr>
+                    <td>&lt;&lt;</td>
+                    <td>Deslocamento para esquerda</td>
+                </tr>
+                <tr>
+                    <td>&gt;&gt;</td>
+                    <td>Deslocamento para direita</td>
+                </tr>
+                <tr>
+                    <td>&gt;&gt;&gt;</td>
+                    <td>Deslocamento para direta sem sinal</td>
+                </tr>
+            </table>
+            <li>Ternários</li> 
+            <li style="list-style-type: circle; text-indent: 2em;">São uma forma condicional de expressão para avaliar uma expressão e retornar um valor com base em uma condição verdadeira ou falsa. Um if-else de uma linha.</li>
+            <li>De tipo</li>
+            <table class="trc">
+                <tr>
+                    <th>OPERADOR</th>
+                    <th>DESCRIÇÃO</th>
+                </tr>
+                <tr>
+                    <td>typeof</td>
+                    <td>Retorna o tipo de uma variável</td>
+                </tr>
+                <tr>
+                    <td>instanceof</td>
+                    <td>Retorna true se um objeto for uma instância de um tipo de objeto.</td>
+                </tr>
+            </table>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="MIDIA/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="MIDIA/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function openCloseNav() {
+            var sidenav = document.getElementById("mySidenav");
+            if (sidenav.style.width === "250px") {
+                sidenav.style.width = "0";
+            } else {
+                sidenav.style.width = "250px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

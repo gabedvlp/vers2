@@ -13,7 +13,7 @@
     position: absolute;
     z-index: 1;
     right: 0;
-    background-color: #2a1e1ea9;
+    background-color: #2f1813a2;
     overflow-x: hidden;
     padding-top: 5px;
     transition: 0.5s;
@@ -31,19 +31,19 @@
     margin: 5px;
     font-size: 20px;
     padding: 10px;
-    background-color: #ffc5c1;
+    background-color: #a5503e;
     transition: 0.3s;
 }
 
 .sidenav button:hover,
 .btn button:hover { 
-    background-color: #f99fa9;
+    background-color: #ffa793;
 }
 
 /* Estilos do cabeçalho e navegação */
 body,
 html {
-    background-color: #2a1e1e; 
+    background-color: #000000; 
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     height: 100%;
@@ -51,7 +51,7 @@ html {
 
 header,
 nav {
-    background-color: #ffc5c1;
+    background-color: #5e2f25;
     margin: 0;
     width: 100%;
     text-align: center;
@@ -71,7 +71,7 @@ header h1 {
 header img {
     width: 200px;
     border-radius: 50%;
-    border: 5px solid #503850;
+    border: 5px solid #8f4e40;
 }
 
 header h2 {
@@ -85,7 +85,7 @@ header p {
 }
 
 nav {
-    background-color: #503850;
+    background-color: #6f2216;
     height: 7vh;
     padding: 10px;
     display: flex;
@@ -131,17 +131,17 @@ nav div.btn button {
     font-size: 20px;
     border: 0;
     padding: 10px;
-    background-color:#ffc5c1 ;
+    background-color:#a5503e ;
 }
 
 nav div.btn a {
     text-decoration: none;
-    color: #2a1e1e ;
+    color: black ;
 }
 
 /* Estilos do conteúdo esquerdo */
 .esq {
-    background-color: #f99fa9;
+    background-color: #8f4e40;
     margin: 0;
     padding: 5px; 
 }
@@ -162,15 +162,15 @@ nav div.btn a {
     text-align: left;
     padding: 3px 5px 3px 20px;
     margin: 10px 15px 10px 15px;
-    border:1px solid #503850;
-    border-left: 5px solid #503850;
+    border:1px solid #3c1712;
+    border-left: 5px solid #3c1712;
     border-radius: 5%;
-    background-color: #5038508c;
+    background-color: #da9a8980;
 }
 
 /* Estilos do conteúdo direito */
 .dir {
-    background-color: #f99fa9;
+    background-color: #8f4e40;
     margin: 0;
     padding: 5px;
     padding-bottom: 8vh;
@@ -197,8 +197,8 @@ div.video {
 
 /* Estilos do conteúdo principal */
 .main {
-    background-color: #f99fa9;
-    margin: 0;
+    background-color: #8f4e40;
+    margin: 0; 
     padding: 5px;
     padding-bottom: 8vh;
 }
@@ -221,24 +221,27 @@ div.video {
 
 .main pre {
     text-indent: 0;
-    background-color: #5038508c;
+    margin: 0;
+    background-color: #3c17129f;
     white-space: pre-wrap;
     word-wrap: break-word;
     margin-bottom: 0;
     font-size: 15px;
-    border: 2px solid #503850;
+    border: 2px solid black;
     padding: 5px;
-    color: #ffc5c1;
+    color: whitesmoke;
 }
 
 /* Estilos adicionais */
 mark {
-    background-color: deeppink;
+    background-color: #ffc2ae;
 }
-ol {
+ol,
+ul {
     padding-bottom: 5px;
 }
-ol, 
+ol,
+ul, 
 li {
     margin: 0;
 }
@@ -267,16 +270,20 @@ table {
     width: 100%;
     margin-bottom: 5px;
     tr > :nth-child(1) {
-        background-color:deepskyblue;
+        background-color:#7b1008;
     }
     tr > :nth-child(2) {
-        background-color:cornflowerblue;
+        background-color:#a93b2a;
     }
     tr > :nth-child(3) {
-        background-color:lightblue;
+        background-color:#7b1008;
     }
 }
-
+table.trc {
+    tr > :nth-child(1) {
+        text-align: center;
+    }
+}
 code {
     font-size: 15px;
     margin: 0;
@@ -293,7 +300,7 @@ code {
         margin: 1px;
         margin-bottom: 5px;
         width: 50%;
-        border: 2px solid #503850;
+        border: 2px solid;
         padding: 5px;
         }
     pre {
@@ -304,7 +311,7 @@ code {
 }
 
 footer {
-    background-color: #503850c4; 
+    background-color: #6f2216; 
     text-align: center;
     padding:0;
     display: flex;
@@ -326,7 +333,7 @@ footer img {
 
 }
 footer a {
-    color: #2a1e1e;
+    color: black;
     letter-spacing: 3px;
     display: flex;
     text-decoration: none;
