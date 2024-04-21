@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="mediaq.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>EVERYTHING MATTERS!</h1>
+        <img src="MIDIA/gabriel.png">
+        <h2>GABRIEL SILVA</h2>
+        <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
+    </header>
+
+    <nav>
+        <div class="home">
+            <a href="index.html"><img src="MIDIA/home-icon-silhouette.svg"></a>
+        </div>
+        <div class="btn">
+            <button><a href="">VARIÁVEIS JAVASCRIPT</a></button>
+        </div>
+        <div class="img">
+            <img src="MIDIA/menu.svg" onclick="openCloseNav()">
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <button><a href="variaveis.html">VARIÁVEIS</a></button>
+        <button><a href=""></a></button>
+        <button><a href=""></a></button>
+    </div>
+    <div class="main">
+        <h1>DECLARANDO VARIÁVEIS</h1>
+        <p>São contêiners para armazenamento de dados. Podem ser declaradas de quatro maneiras:</p>
+            <ol>
+                <li>Usando a palavra-chave <mark>var</mark>;</li>
+                <li>Usando a palavra-chave <mark>let</mark>;</li>
+                <li>Usando a palavra-chave <mark>const</mark>;</li>
+                <li>Automáticamente.</li>
+            </ol>
+            <div class="sbs">
+                <code>
+                    <mark>NÃO DECLARADO:</mark><br>
+                    &lt;script&gt;<br>
+                    x = 5;<br>
+                    y = 6;<br>
+                    z = x + y;<br>
+                    &lt;script&gt;
+                </code>
+                <pre>
+Eles são declarados a primeira vez quando usados.
+<mark>RESULTADO:</mark>
+
+<span id="demo">
+<script>
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML = "O valor de z é: " + z;
+</script>
+</pre>
+            </div>
+            <p><mark>OBSERVAÇÃO: Sempre declarar as variáveis antes.</mark></p>
+        
+        <p>a palavra-chave <mark>var</mark> é o mais antigo e só deve ser usado em código escrito para navegadores mais antigos. Se essa não é a intenção, prefira usar as palavras-chaves <mark>let</mark> ou <mark>const</mark>.
+            <div class="sbs">
+                <code>
+                    <mark>USANDO VAR:</mark><br>
+                    &lt;script&gt;<br>
+                    var x = 5;<br>
+                    var y = 6;<br>
+                    var z = x + y;<br>
+                    &lt;/script&gt;<br>
+                </code>
+                <code>
+                    <mark>USANDO LET:</mark><br>
+                    &lt;script&gt;<br>
+                    let x = 5;<br>
+                    let y = 6;<br>
+                    let z = x + y;<br>
+                    &lt;/script&gt;<br>
+                </code>
+            </div>
+            <div class="sbs">
+                <code>
+                    <mark>USANDO CONST:</mark><br>
+                    &lt;script&gt;<br>
+                    const x = 5;<br>
+                    const y = 6;<br>
+                    const z = x + y;<br>
+                    &lt;/script&gt;<br>
+                </code>
+                <code>
+                    <mark>EXEMPLO MISTO:</mark><br>
+                    &lt;script&gt;<br>
+                    const p1 = 5;<br>
+                    const p2 = 6;<br>
+                    let ttl = p1 + p2;<br>
+                    &lt;/script&gt;<br>
+                </code>
+            </div>
+            <p>As variáveis p1 e p2 foram declaradas com const. Esses valores são CONSTANTES, <mark>não podem ser alterados</mark>. A variável ttl foi declarada com let. Esses valores podem ser alterados.</p>
+            <h2>Quando usar VAR, LET ou CONST?</h2>
+            <ol>
+                <li>Use const se o VALOR e o TIPO (Arrays e Objetos) não deve ser alterado;</li>
+                <li>Use let se não puder usar const;</li>
+                <li>Somente para suporte a navegadores antigos.</li>
+            </ol>
+
+            <h1>IDENTIFICADORES</h1>
+            <p>Todas as variáveis precisam ser identificadas com um nome exclusivo. Podem ser nomes curtos (x, y) ou mais descritivos (idade, soma). Regras gerais:</p>
+            <ol>
+                <li>Letras, dígitos, sublinhados e cifrões;</li>
+                <li>Devem começar com letra;</li>
+                <li>Podem começar começar com cifrão e sublinhado;</li>
+                <li>Diferenciam maiúsculas e minúsculas;</li>
+                <li>Palavras reservadas (como palavras-chaves) não podem ser usadas.</li>
+            </ol>
+
+            <h1>ATRIBUINDO VALORES</h1>
+            <p>O sinal de igual (=) atribui um valor a uma variável, diferente da álgebra, <b>não é "igual a"</b>. <br>
+            <mark>OBSERVAÇÃO: "igual a" é escrito como == .</mark><br>
+            let carName;<br>
+            carName = volvo <br> 
+            ou<br>
+            let carName = volvo</p>
+            <p>Você pode declarar muitas variáveis em uma instrução separando-as com vírgula. Ou declarar sem valor. O valor pode ser algo que precisa ser calculado ou algo que será fornecido posteriormente, como a entrada de um usuário.</p> 
+            <p>Não é possível redeclarar uma variável com let ou const, mas se você redeclarar uma variável declarada com var, ela não perderá seu valor.</p>
+
+            <h1>DIFERENÇAS LET, CONST E VAR</h1>
+                <table>
+                    <tr>
+                        <th>var</th>
+                        <th>let</th>
+                        <th>const</th>
+                    </tr>
+                    <tr>
+                        <td>Global</td>
+                        <td>Escopo de bloco</td>
+                        <td>Escopo de bloco</td>
+                    </tr>
+                    <tr>
+                        <td>Redeclara</td>
+                        <td>Em outro bloco</td>
+                        <td>Em outro bloco</td>
+                    </tr>
+                    <tr>
+                        <td>Reatribui</td>
+                        <td>Reatribui</td>
+                        <td>Não reatribui</td>
+                    </tr>
+                    <tr>
+                        <td>Içado</td>
+                        <td>Não é içado</td>
+                        <td>Não é içado</td>
+                    </tr>
+                    <tr>
+                        <td>Vincula a this</td>
+                        <td>Não vincula a this</td>
+                        <td>Não vincula a this</td>
+                    </tr>
+                </table>
+                <ol>
+                    <li><mark>ESCOPO DE BLOCO:</mark> Não pode ser acessada de fora do { } que foi declarada.</li>
+                    <li><mark>GLOBAL:</mark> Acessada no código inteiro.</li>
+                    <li><mark>IÇADA:</mark> Movida para o topo, antes da execução real.</li>
+                    <li><mark>THIS:</mark> Palavra-chave definida dentro do contexto de execução de uma função.</li>
+                </ol>
+                <h2>OBJETOS E MATRIZES CONST</h2>
+                <p>A palavra-chave const é um pouco enganosa, ela não define um valor constante, define uma <b>REFERÊNCIA CONSTANTE</b> a um valor. Por causa disso não pode reatribuir um valor, uma matriz ou um objeto constante, mas pode alterar os elementos da matriz e propriedades do objeto constante.</p>
+                <div style="border: 2px solid; margin-bottom: 5px; padding: 5px;">
+                    <code style="text-align: left;">
+                        <mark>// Array constante: <br></mark>
+                        const cars = ["Saab", "Volvo", "BMW"];<br>
+                        <mark>// Pode mudar um elemento:<br></mark>
+                        cars[0] = "Toyota";<br>
+                        <mark>// Pode adicionar um elemento:<br></mark>
+                        cars.push("Audi");
+                    </code>
+                </div>
+                <div style="border: 2px solid; margin-bottom: 5px; padding: 5px;">
+                    <code style="text-align: left;">
+                        <mark>// Objeto constante:<br></mark>
+                        const car = {type:"Fiat", model:"500", color:"white"};<br>
+                        <mark>// Pode mudar a propriedade:<br></mark>
+                        car.color = "red";<br>
+                        <mark>// Pode adicionar uma propriedade:<br></mark>
+                        car.owner = "Johnson";
+                    </code>
+                </div>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="MIDIA/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="MIDIA/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        function openCloseNav() {
+            var sidenav = document.getElementById("mySidenav");
+            if (sidenav.style.width === "250px") {
+                sidenav.style.width = "0";
+            } else {
+                sidenav.style.width = "250px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

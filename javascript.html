@@ -1,162 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="mediaq.css">
     <title>Document</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
-      @media only screen and (min-width: 767px) {
-            .row{
-              display: flex;
-              flex-direction: row;
-            }
-      }
-      /* For mobile phones: */
-      @media only screen and (max-width: 768px) {
-            .row{
-              display: flex;
-              flex-direction: column;
-            }
-            [class*="col-"] {
-                width: 100%;
-            } 
-      }
-      
-      @media only screen and (min-width: 600px) {
-        /* For tablets: */
-      .col-s-1 {width: 8.33%;}
-      .col-s-2 {width: 16.66%;}
-      .col-s-3 {width: 25%;}
-      .col-s-4 {width: 33.33%;}
-      .col-s-5 {width: 41.66%;}
-      .col-s-6 {width: 50%;}
-      .col-s-7 {width: 58.33%;}
-      .col-s-8 {width: 66.66%;}
-      .col-s-9 {width: 75%;}
-      .col-s-10 {width: 83.33%;}
-      .col-s-11 {width: 91.66%;}
-      .col-s-12 {width: 100%;}
-      }
-          </style>
-      </head>
+</head>
+
 <body>
-        <header>
-            <h1>EVERYTHING MATTERS!</h1>
-            <img src="MIDIA/gabriel.png">
-            <h2><a href="home.html">GABRIEL SILVA</a></h2>
-            <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
-                UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
-        </header>
+    <header>
+        <h1>EVERYTHING MATTERS!</h1>
+        <img src="MIDIA/gabriel.png">
+        <h2><a href="home.html">GABRIEL SILVA</a></h2>
+        <p>DESENV. WEB HTML + CSS + JAVASCRIPT<br>
+            UNIVERSIDADE ESTÁCIO DE SÁ - 2024</p>
+    </header>
 
-        <nav>
-          <div class="home">
+    <nav>
+        <div class="home">
             <a href="index.html"><img src="MIDIA/home-icon-silhouette.svg"></a>
-          </div>
-          <div class="btn">
-              <button><a href="javascript.html">JAVASCRIPT</a></button>
-          </div>
-          <div class="img">
-            <img src="MIDIA/menu.svg" onclick="openNav()">
-          </div>
-          </nav>
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <button><a href="">js</a></button>
-            <button><a href="">js</a></button>
-            <button><a href="">js</a></button>
-          </div>
+        </div>
+        <div class="btn">
+            <button><a href="javascript.html">JAVASCRIPT</a></button>
+        </div>
+        <div class="img">
+            <img src="MIDIA/menu.svg" onclick="openCloseNav()">
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <button><a href="variaveis.html">VARIÁVEIS</a></button>
+        <button><a href="">js</a></button>
+        <button><a href="">js</a></button>
+    </div>
 
-        <div class="main">
-            <div>
-              <h1>JAVASCRIPT - INTRODUÇÃO</h1>
-              <p>É uma das 3 linguagens de programação fundamental para o desenvolvimento de websites. HTML para definir o conteúdo, CSS para especificar o layout e JAVASCRIPT para interagir com o conteúdo.</p>
-              <p>O código JS é inserido entre as tags &lt;script&gt; e &lt;/script&gt; no HTML. Exemplos antigos de JS podem usar um atributo type: <br>
-               <mark>&lt;script type="text/javascript"&gt; </mark> <br>
-               O atributo type não é obrigatório. JS é a linguagem padrão em HTML.</p>
-              <p>Pode ser inserido: <mark>SCRIPT INTERNO</mark> dentro de BODY OU HEAD ou <mark>SCRIPT EXTERNO</mark> utilizando arquivos .JS. Um script externo pode ser referenciado de três maneiras:<br>
+    <div class="main">
+        <div>
+            <h1>JAVASCRIPT - INTRODUÇÃO</h1>
+            <p>É uma das 3 linguagens de programação fundamental para o desenvolvimento de websites. HTML para definir o
+                conteúdo, CSS para especificar o layout e JAVASCRIPT para interagir com o conteúdo.</p>
+            <p>O código JS é inserido entre as tags &lt;script&gt; e &lt;/script&gt; no HTML. Exemplos antigos de JS
+                podem usar um atributo type: <br>
+                <mark>&lt;script type="text/javascript"&gt; </mark> <br>
+                O atributo type não é obrigatório. JS é a linguagem padrão em HTML.
+            </p>
+            <p>Pode ser inserido: <mark>SCRIPT INTERNO</mark> dentro de BODY OU HEAD ou <mark>SCRIPT EXTERNO</mark>
+                utilizando arquivos .JS. Um script externo pode ser referenciado de três maneiras:<br>
                 1. URL completa (scr="http://exemplo.com/js/script.js"); <br>
                 2. Caminho de arquivo: scr="js/script.js"; <br>
                 3. Sem nenhum caminho: scr="script.js". <br>
-              <mark>NOTA: SCRIPTS EXTERNOS NÃO PODEM CONTER &lt;script&gt;!</mark><br>
-              Vantagens de script externo:<br>
-              1. Separa o HTML do código;<br>
-              2. Torna o HTML e JS mais fáceis de ler e manter;<br>
-              3. Aumenta a velocidade de carregamento.<br>
-              Para adicionar vários arquivos de script, use várias tags de script.</p>
-              <h1>O QUE PODE FAZER?</h1>
-<pre>
+                <mark>NOTA: SCRIPTS EXTERNOS NÃO PODEM CONTER &lt;script&gt;!</mark><br>
+                Vantagens de script externo:<br>
+                1. Separa o HTML do código;<br>
+                2. Torna o HTML e JS mais fáceis de ler e manter;<br>
+                3. Aumenta a velocidade de carregamento.<br>
+                Para adicionar vários arquivos de script, use várias tags de script.
+            </p>
+            <h1>O QUE PODE FAZER?</h1>
+            <pre>
 1. Pode alterar o conteúdo HTML;
 2. Pode alterar atributos HTML;
 3. Pode alterar estilos CSS;
 4. Pode ocultar/exibir elementos HTML.
 </pre>
-              <p>Um <mark>function()</mark> é um bloco de código JS, que pode ser executado quando "chamado". Por exemplo, uma função é chamada quando ocorre um evento (como um clique).</p>
-              <p>O resultado dessa função pode ser exibido de diferentes maneiras:<br>
-              1. Escrevendo em um elemento HTML <mark>innerHTML</mark>;<br>
-              2. Escrevendo na saída HTML <mark>document.write()</mark>;<br>
-              3. Escrevendo em uma caixa de alerta <mark>alert()</mark>;<br>
-              4. Escrevendo no console <mark>console.log()</mark>.</p>
+            <p>Um <mark>function()</mark> é um bloco de código JS, que pode ser executado quando "chamado". Por exemplo,
+                uma função é chamada quando ocorre um evento (como um clique).</p>
+            <p>O resultado dessa função pode ser exibido de diferentes maneiras:<br>
+                1. Escrevendo em um elemento HTML <mark>innerHTML</mark>;<br>
+                2. Escrevendo na saída HTML <mark>document.write()</mark>;<br>
+                3. Escrevendo em uma caixa de alerta <mark>alert()</mark>;<br>
+                4. Escrevendo no console <mark>console.log()</mark>.</p>
             <h2>INNERHTML</h2>
             <p>Para acessar um elemento HTML, o JS pode usar o método: <mark>document.getElementById(id)</mark><br>
-            O atributo id define o elemento HTML. A innerHTML define o conteúdo HTML. Exemplo:
-<pre>
+                O atributo id define o elemento HTML. A innerHTML define o conteúdo HTML. Exemplo:
+            <pre>
 document.getElementById("demo").
 innerHTML = 5 + 6;
-</pre></p>
+</pre>
+            </p>
             <h2>DOCUMENT.WRITE()</h2>
             <p>Para fins de teste, é conveniente usar.<br>
-            <mark style="background-color: red;">USAR APÓS O CARREGAMENTO DE UM DOCUMENTO, EXCLUIRÁ <b>TODO O HTML EXISTENTE! USAR APENAS PARA FINS DE TESTE!</b></mark>
-<pre>
+                <mark style="background-color: red;">USAR APÓS O CARREGAMENTO DE UM DOCUMENTO, EXCLUIRÁ <b>TODO O HTML
+                        EXISTENTE! USAR APENAS PARA FINS DE TESTE!</b></mark>
+            <pre>
 document.write(5 + 6);
-</pre></p>
+</pre>
+            </p>
             <h2>CONSOLE.LOG()</h2>
             <p>Para fins de depuração, pode usar o método console.log para exibir dados.
-<pre>
+            <pre>
 console.log(5 + 6);
-</pre></p>
+</pre>
+            </p>
             <h2>IMPRESSÃO JS</h2>
-            <p>JavaScript não possui nenhum objeto ou método de impressão. Você não pode acessar dispositivos de saída em JS. A única exceção é que você pode chamar o <mark>window.print()</mark> para imprimir a janela atual.
-<pre>
+            <p>JavaScript não possui nenhum objeto ou método de impressão. Você não pode acessar dispositivos de saída
+                em JS. A única exceção é que você pode chamar o <mark>window.print()</mark> para imprimir a janela
+                atual.
+            <pre>
 &lt;button onlick="window.print();"&gt;
 IMPRIMIR
 &lt;/button&gt;
-</pre></p>
+</pre>
+            </p>
             <h1>DECLARAÇÕES JAVASCRIPT</h1>
-            <p>Um programa de computador é uma lista de "instruções" a serem executadas. Um código JS é uma lista de instruções. Em HTML, os programas JS são executados pelo navegador. As instruções são compostas por:<br>
-            1. VALORES;<br>
-            2. OPERADORES;<br>
-            3. EXPRESSÕES;<br>
-            4. PALAVRAS-CHAVES;<br>
-            5. COMENTARIOS.</p>
-            <p><mark>PONTO E VÍRGULA</mark> separam instruções JS. Quando separadas por ponto e vírgula, são permitidas múltiplas instruções em uma linha. Não é obrigatório, mas <mark>É ALTAMENTE RECOMENDADO</mark>.</p>
-            <p><mark>ESPAÇO EM BRANCO</mark> JS ignora espaços em branco. Você pode adicionar para torná-lo legível. <mark>Uma boa prática é: colocar espaços ao redor dos operadores (= + - *)</mark></p>
-            <p><mark>BLOCOS DE CÓDIGO</mark> instruções podem ser agrupadas em blocos de códigos, entre chaves { }. O objetivo é definir instruções a serem executadas juntas. Exemplo:
-<pre>
+            <p>Um programa de computador é uma lista de "instruções" a serem executadas. Um código JS é uma lista de
+                instruções. Em HTML, os programas JS são executados pelo navegador. As instruções são compostas por:<br>
+                1. VALORES;<br>
+                2. OPERADORES;<br>
+                3. EXPRESSÕES;<br>
+                4. PALAVRAS-CHAVES;<br>
+                5. COMENTARIOS.</p>
+            <p><mark>PONTO E VÍRGULA</mark> separam instruções JS. Quando separadas por ponto e vírgula, são permitidas
+                múltiplas instruções em uma linha. Não é obrigatório, mas <mark>É ALTAMENTE RECOMENDADO</mark>.</p>
+            <p><mark>ESPAÇO EM BRANCO</mark> JS ignora espaços em branco. Você pode adicionar para torná-lo legível.
+                <mark>Uma boa prática é: colocar espaços ao redor dos operadores (= + - *)</mark></p>
+            <p><mark>BLOCOS DE CÓDIGO</mark> instruções podem ser agrupadas em blocos de códigos, entre chaves { }. O
+                objetivo é definir instruções a serem executadas juntas. Exemplo:
+            <pre>
 function myFunction() {
   document.getElementById("demo1").
   innerHTML = "Olá!";
   document.getElementById("demo2").
   innerHTML = "Oi.";
 }
-</pre></p>
-            <p><mark>PALAVRAS CHAVES</mark> as instruções geralmente começam com uma palavra-chave para identificar a ação a ser executada. Exemplo:</p>
-<pre>
+</pre>
+            </p>
+            <p><mark>PALAVRAS CHAVES</mark> as instruções geralmente começam com uma palavra-chave para identificar a
+                ação a ser executada. Exemplo:</p>
+            <pre>
 var /// declara uma variável;
 let /// declara uma variável de bloco;
 const /// declara uma constante de bloco;
@@ -169,7 +141,7 @@ try /// declara um bloco de instruções para tentar executar.
 </pre><br>
             <h1>SINTAXE</h1>
             <p>Conjunto de regras para construir o JS.</p>
-<pre>
+            <pre>
 // CRIAR VARIÁVEIS:
 var x;
 let y;
@@ -179,37 +151,47 @@ x = 5;
 y = 6;
 let z = x + y;
 </pre>
-            <p><mark>VALORES</mark> a sintaxe JS define dois tipos de valores: variáveis e fixos. Valores fixos são chamados de <mark>LITERAIS</mark> e valores das variáveis são chamados de <mark>VARIÁVEIS</mark>.<br>
-            >>>> LITERAIS: <br>
-            As duas regras mais importantes para valores fixos são:<br>
-            1. Números são escritos com ou sem decimais: 10.50 // 1001.<br>
-            2. Strings são textos escritos entre aspas duplas ou simples: "John Doe" // 'John Doe'.<br>
-            >>>> VARIÁVEIS:<br>
-            São usadas para armazenar valores de dados. JS usa as palavras: <mark>var</mark>, <mark>let</mark> e <mark>const</mark> para declarar variáveis.<br></p>
-            <p><mark>OPERADORES ARITIMÉTICOS</mark> ( + - * / ) são usados para calcular valores. E para atribuir valores: é usado o sinal de igual.</p>
-            <p><mark>IDENTIFICADORES</mark> são nomes JS, usados para nomear variáveis, palavras-chaves, funções, etc. As regras são as mesmas na maioria das linguagens:<br>
-            Deve começar com uma letra (AZ ou az), cifrão ($) ou sublinhado (_)</p>
+            <p><mark>VALORES</mark> a sintaxe JS define dois tipos de valores: variáveis e fixos. Valores fixos são
+                chamados de <mark>LITERAIS</mark> e valores das variáveis são chamados de <mark>VARIÁVEIS</mark>.<br>
+                >>>> LITERAIS: <br>
+                As duas regras mais importantes para valores fixos são:<br>
+                1. Números são escritos com ou sem decimais: 10.50 // 1001.<br>
+                2. Strings são textos escritos entre aspas duplas ou simples: "John Doe" // 'John Doe'.<br>
+                >>>> VARIÁVEIS:<br>
+                São usadas para armazenar valores de dados. JS usa as palavras: <mark>var</mark>, <mark>let</mark> e
+                <mark>const</mark> para declarar variáveis.<br></p>
+            <p><mark>OPERADORES ARITIMÉTICOS</mark> ( + - * / ) são usados para calcular valores. E para atribuir
+                valores: é usado o sinal de igual.</p>
+            <p><mark>IDENTIFICADORES</mark> são nomes JS, usados para nomear variáveis, palavras-chaves, funções, etc.
+                As regras são as mesmas na maioria das linguagens:<br>
+                Deve começar com uma letra (AZ ou az), cifrão ($) ou sublinhado (_)</p>
         </div>
     </div>
     <footer>
-      <a href="https://www.linkedin.com/in/gabesilva97/"><img src="MIDIA/LinkedIn.png">
-          <p>LINKEDIN</p>
-      </a>
-      <a href="wa.me/5521985358527"><img src="MIDIA/whatsapp.jpg">
-          <p>WHATSAPP</p>
-      </a>
-      </footer>
-  
+        <a href="https://www.linkedin.com/in/gabesilva97/"><img src="MIDIA/LinkedIn.png">
+            <p>LINKEDIN</p>
+        </a>
+        <a href="wa.me/5521985358527"><img src="MIDIA/whatsapp.jpg">
+            <p>WHATSAPP</p>
+        </a>
+    </footer>
     <script>
-      /* Set the width of the side navigation to 250px */
         function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "250px";
         }
-        
-        /* Set the width of the side navigation to 0 */
         function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.width = "0";
         }
-            </script>
+        function openCloseNav() {
+            var sidenav = document.getElementById("mySidenav");
+            if (sidenav.style.width === "250px") {
+                sidenav.style.width = "0";
+            } else {
+                sidenav.style.width = "250px";
+            }
+        }
+
+    </script>
 </body>
+
 </html>
